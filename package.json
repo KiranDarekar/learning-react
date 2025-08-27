@@ -1,0 +1,29 @@
+{
+  "name": "learning-react",
+  "version": "1.0.0",
+  "description": "This is learing project for React js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KiranDarekar/learning-react.git"
+  },
+  "keywords": [],
+  "author": "Kiran Darekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KiranDarekar/learning-react/issues"
+  },
+  "homepage": "https://github.com/KiranDarekar/learning-react#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "BrowsersList": [
+    "last 2 versions"
+  ]
+}
