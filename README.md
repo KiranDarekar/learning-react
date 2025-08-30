@@ -19,3 +19,36 @@
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev and Prod Bundles
+
+# food ordering all 
+/***
+ * Header
+ *  - Logo
+ *  - Nav
+ * RestroContainer
+ *  - search
+ *  - RestaurantCard
+ *      - Img
+ *      - nameof Res, star rating, 
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
+
+ There two type export and import
+ Default import - 
+ export default <name of component>;
+ import <name of component> from "path";
+
+export const <name of component>;
+ import {<name of component>} from "path";
+
+ # react Hooks
+ (Normal js utility functions);
+ - useState() - whenever state varible change / update React rerender the component
+ - useEffect()
+
+ Reconciliation Algorithm ( React fiber )
+Vertul DOM is represtation actual DOM 
