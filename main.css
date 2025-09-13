@@ -6,6 +6,7 @@
     border: 1px solid gray;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
 }
 
 .logo {
@@ -24,28 +25,33 @@
 }
 
 .nav-items > ul > li{
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 
 /*
 body 
 */
 .restro-wrapper {
-    border: 1px solid red;
+    border: 1px solid gray;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
+    padding: 10px;
 }
 .restro-search {
     margin: 15px;
 }
-.restro-container {
+.restro-container, .shimmer-container {
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
 }
-
-.restro-card {
+.shimmer-card {
+    height: 296px;
+    width: 300px;
+    background-color: gray;
+}
+.restro-card, .shimmer-card{
     width: 300px;
     margin: 10px;
     border: 1px solid #336699;
@@ -62,4 +68,10 @@ body
 .restro-details {
     background-color: white;
     padding: 10px
+}
+
+.footer {
+    padding: 25px 50px;
+    text-align: center;
+    border: 1px solid gray;
 }

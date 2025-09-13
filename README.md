@@ -52,3 +52,15 @@ export const <name of component>;
 
  Reconciliation Algorithm ( React fiber )
 Vertul DOM is represtation actual DOM 
+
+microservics architectuer
+
+Whenever state Varibles update react triggers a reconciliation cycle ( rerendor the component)
+
+
+# if no dependency then useEffect call everytime rerender
+# if there is dependency with [] -> useEffect cal only once
+# If there is dependency with [someprop] -> useEffect call everytime someprop updated.
+
+
+# 2 
