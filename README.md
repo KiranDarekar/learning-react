@@ -63,4 +63,13 @@ Whenever state Varibles update react triggers a reconciliation cycle ( rerendor 
 # If there is dependency with [someprop] -> useEffect call everytime someprop updated.
 
 
-# 2 
+# Mounting
+> constructor ( dummy data )
+> Render ( dummy data )  > HTMl with dummy data
+> component Did mount
+    > Api Call
+    > this.setState -> state variable is updated then again update face started
+
+> UPDATE > render flow start
+    > HTML update with latest value
+> componentDidUpdate

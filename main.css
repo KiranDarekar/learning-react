@@ -67,11 +67,15 @@ body
 }
 .restro-details {
     background-color: white;
-    padding: 10px
+    padding: 10px;
 }
 
 .footer {
     padding: 25px 50px;
     text-align: center;
     border: 1px solid gray;
+}
+
+.user-card {
+    padding: 10px;
 }

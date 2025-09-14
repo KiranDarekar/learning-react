@@ -1,6 +1,7 @@
 import RestroCard from "./RestroCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./shimmer";
+import { Link } from "react-router-dom";
 
 
 
@@ -72,12 +73,10 @@ const RestroContainer = () => {
         </button>
       </div>
       <div className="restro-container">
-        {filterListOfRestaurants?.map((restaurantCard) => (
-          <RestroCard
-            key={restaurantCard?.card?.card?.info?.id}
-            resData={restaurantCard}
-          />
-        ))}
+        {filterListOfRestaurants?.map((restaurantCard) =>  restaurantCard?.card?.card?.info?.id ? (
+              <Link key={restaurantCard?.card?.card?.info?.id} to={"/restaurant/" + restaurantCard?.card?.card?.info?.id} >
+              <RestroCard resData={restaurantCard} />
+          </Link>) : (''))}
       </div>
     </div>
   );
