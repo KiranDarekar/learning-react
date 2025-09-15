@@ -2,12 +2,16 @@ import RestroCard from "./RestroCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 
 const RestroContainer = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filterListOfRestaurants, setFilterListOfRestaurants] = useState([]);
+  const checkConnect = useOnlineStatus();
+  console.log("checkConnect -", checkConnect);
+
 
   useEffect(()=>{
     fetchData();
@@ -34,6 +38,7 @@ const RestroContainer = () => {
     <Shimmer />
   ) : (
     <div className="restro-wrapper">
+      {checkConnect ? <div className="red">X</div> : <div className="blue">V</div>}
       <div className="search">
         <input
           type="text"
